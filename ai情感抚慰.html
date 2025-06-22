@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI 情感抚慰系统）</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- 引入 crypto-js 用来计算 MD5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="ai.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><i class="fas fa-heart"></i> AI 情感抚慰系统</h1>
+        <p class="subtitle">
+          基于讯飞大模型的情感支持助手，随时为您提供温暖的陪伴
+        </p>
+        <div class="api-badge">讯飞星火 Spark API</div>
+      </header>
+      <div class="chat-container">
+        <div id="chat-box">
+          <div class="message ai">
+            <div class="message-header">
+              <div class="avatar"><i class="fas fa-robot"></i></div>
+              <span>情感抚慰助手</span>
+            </div>
+            <div class="message-content">
+              您好！我是您的情感抚慰助手。无论您感到焦虑、悲伤还是迷茫，我都会在这里倾听您的心声...
+            </div>
+          </div>
+          <div class="typing-indicator" id="typing-indicator">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="input-area">
+          <input id="user-input" placeholder="在这里说出您的烦恼或感受..." />
+          <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <footer>
+        <p>AI 情感抚慰系统 &copy; 2025 | 讯飞星火</p>
+      </footer>
+    </div>
+    <script src="ai.js"></script>
+  </body>
+</html>
